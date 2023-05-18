@@ -158,7 +158,7 @@ export default (() => {
 						align-items="center"
 					>
 						<Link
-							href="#"
+							href="mailto:superconscious[at]tuhh.de"
 							padding="12px 24px 12px 24px"
 							color="--light"
 							text-decoration-line="initial"
@@ -175,7 +175,7 @@ export default (() => {
 							Reach out!
 						</Link>
 						<Link
-							href="#"
+							href="https://trello.com/w/superconai/home"
 							padding="10px 24px 10px 24px"
 							color="--darkL1"
 							text-decoration-line="initial"
@@ -391,13 +391,7 @@ export default (() => {
 					<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
 						AI Assistants
 					</Text>
-					<Text
-						margin="0px 0px 0px 0px"
-						color="--greyD3"
-						font="--headline4"
-						lg-text-align="left"
-						flex="1 0 auto"
-					>
+					<Text font="--headline4">
 						Not just for student use cases. This is our proof-of-concept factory.
 					</Text>
 					<Box min-width="100px" min-height="100px">
@@ -473,19 +467,8 @@ export default (() => {
 					<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
 						The Fun Garage
 					</Text>
-					<Text
-						margin="0px 0px 0px 0px"
-						color="--greyD3"
-						font="--headline4"
-						lg-text-align="left"
-						flex="1 0 auto"
-					>
+					<Text font="--headline4">
 						From advanced troll-botics to NSFW image generation - fun comes first!
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
 					</Text>
 					<Box min-width="100px" min-height="100px">
 						{"    "}
