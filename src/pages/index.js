@@ -5,7 +5,8 @@ import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
-import { FaGalacticRepublic, FaHornbill, FaReact } from "react-icons/fa";
+import { FaSith, FaHornbill, FaReact } from "react-icons/fa";
+import { MdCheckCircle } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -297,29 +298,86 @@ export default (() => {
 			</Box>
 			<Box display="grid" grid-template-columns="repeat(3, 1fr)" grid-gap="24px 4%" md-grid-template-columns="1fr">
 				<Box justify-content="flex-start" flex-direction="column" display="flex">
-					<Icon
-						category="fa"
-						icon={FaGalacticRepublic}
-						margin="0px 0px 16px 0px"
-						color="--dark"
-						size="48px"
-						padding="6px 6px 6px 6px"
-					/>
-					<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
-						MLOps
-					</Text>
+					{"  "}
+					<Box justify-content="flex-start" flex-direction="column" display="flex">
+						<Icon
+							category="fa"
+							icon={FaSith}
+							margin="0px 0px 16px 0px"
+							color="--dark"
+							size="48px"
+							padding="6px 6px 6px 6px"
+						/>
+						<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
+							MLOps
+						</Text>
+						{"  "}
+					</Box>
+					{"  "}
 					<Text font="--headline4">
-						Learning to operate AI models with productive use in mind
+						{"    "}Learning to operate AI models with productive use in mind{" "}
 					</Text>
-					<Text
-						margin="0px 0px 0px 0px"
-						color="--greyD3"
-						font="--base"
-						lg-text-align="left"
-						flex="1 0 auto"
-					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					</Text>
+					{"  "}
+					<Box min-width="100px" min-height="100px">
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Running on-premise LLMs (smol one){"\n    "}
+						</Text>
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Working with and on image generation models{"\n    "}
+						</Text>
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Fine-tuning models for specific use cases - and filling our KB{"\n    "}
+						</Text>
+						{"  "}
+					</Box>
 				</Box>
 				<Box justify-content="flex-start" flex-direction="column" display="flex">
 					<Icon
@@ -336,12 +394,72 @@ export default (() => {
 					<Text
 						margin="0px 0px 0px 0px"
 						color="--greyD3"
-						font="--base"
+						font="--headline4"
 						lg-text-align="left"
 						flex="1 0 auto"
 					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						Not just for student use cases. This is our proof-of-concept factory.
 					</Text>
+					<Box min-width="100px" min-height="100px">
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{" "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Running on-premise LLMs (smol one){"    "}
+						</Text>
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Working with and on image generation models{"\n    "}
+						</Text>
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Fine-tuning models for specific use cases - and filling our KB{"\n    "}
+						</Text>
+						{"  "}
+					</Box>
 				</Box>
 				<Box justify-content="flex-start" flex-direction="column" display="flex">
 					<Icon
@@ -358,12 +476,77 @@ export default (() => {
 					<Text
 						margin="0px 0px 0px 0px"
 						color="--greyD3"
-						font="--base"
+						font="--headline4"
 						lg-text-align="left"
 						flex="1 0 auto"
 					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						From advanced troll-botics to NSFW image generation - fun comes first!
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
 					</Text>
+					<Box min-width="100px" min-height="100px">
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Running on-premise LLMs (smol one){"\n    "}
+						</Text>
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Working with and on image generation models{"\n    "}
+						</Text>
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Fine-tuning models for specific use cases - and filling our KB{"\n    "}
+						</Text>
+						{"  "}
+					</Box>
 				</Box>
 			</Box>
 		</Section>
@@ -415,42 +598,32 @@ export default (() => {
 				</Box>
 				<Box
 					display="flex"
-					flex-direction="column"
+					flex-direction="row"
+					align-items="center"
 					md-width="100%"
-					md-flex-direction="row"
-					md-align-items="center"
+					md-align-items="baseline"
 					md-justify-content="space-between"
 				>
-					<Text lg-font="600 16px/3 &quot;Manrope&quot;, sans-serif" margin="16px 0px 13px 0px" font="--headline4" color="--dark">
-						Dawid Golebiewski
-					</Text>
-					<SocialMedia margin="0px 0px 0px -3px" justify-content="flex-start" linked-in="https://linkedin.com/">
-						<Override
-							slot="link"
-							border-radius="50%"
-							hover-background="transparent"
-							display="flex"
-							justify-content="center"
-							height="36px"
-							align-items="center"
-							background="none"
-							color="--grey"
-							hover-color="--light"
-							margin="0 5px 0 5px"
-							padding="5x 5px 5px 5px"
-							width="36px"
-						/>
-						<Override
-							slot="icon"
-							border-radius="50px"
-							lg-font="30px sans-serif"
-							color="--dark"
-							padding="5px 5px 5px 5px"
-							border-width="0px"
-							size="34px"
-						/>
-					</SocialMedia>
+					{"  "}
+					<Box display="flex" alignItems="center">
+						{"    "}
+						<Text lg-font="600 16px/3 &quot;Manrope&quot;, sans-serif" margin="16px 8px 13px 0px" font="--headline4" color="--dark">
+							{"      "}Dawid Golebiewski
+						</Text>
+						<SocialMedia margin="0px 0px 0px -3px" justify-content="flex-start" linked-in="https://linkedin.com/in/dhoracy">
+							{"          "}
+						</SocialMedia>
+						{"  "}
+					</Box>
+					{"  "}
+					<Box margin="8px 0px 0px 0px">
+						{"      "}
+					</Box>
 				</Box>
+				<Text margin="0px" font="--lead">
+					{"      "}GES & IIW Alumnus, Founder
+					<br />
+				</Text>
 			</Box>
 			<Box
 				empty-border-color="LightGray"
@@ -491,35 +664,9 @@ export default (() => {
 					<Text margin="16px 0px 13px 0px" font="--headline4" color="--dark" lg-font="600 16px/1.3 &quot;Manrope&quot;, sans-serif">
 						Stephan Fischer
 					</Text>
-					<SocialMedia margin="0px 0px 0px -3px" justify-content="flex-start" instagram="https://instagram.com/instagram">
-						<Override
-							slot="link"
-							justify-content="center"
-							background="none"
-							color="--grey"
-							display="flex"
-							hover-background="transparent"
-							margin="0 5px 0 5px"
-							padding="5x 5px 5px 5px"
-							width="36px"
-							height="36px"
-							align-items="center"
-							border-radius="50%"
-							hover-color="--light"
-						/>
-						<Override
-							slot="icon"
-							border-radius="50px"
-							lg-font="30px sans-serif"
-							color="--dark"
-							padding="5px 5px 5px 5px"
-							border-width="0px"
-							size="34px"
-						/>
-						<Override slot="link-facebook" margin="0px 5px 0px 0px">
-							<div />
-						</Override>
-					</SocialMedia>
+					<Text margin="0px 0px 0px 0px" font="--lead">
+						B.Sc. Mechatronik, Resident AIrtist
+					</Text>
 				</Box>
 			</Box>
 			<Box
@@ -558,7 +705,13 @@ export default (() => {
 					md-flex-direction="row"
 					md-align-items="center"
 				>
-					<Text font="--headline4" color="--dark" lg-font="600 16px/1.3 &quot;Manrope&quot;, sans-serif" margin="16px 0px 13px 0px">
+					<Text
+						font="--headline4"
+						color="--dark"
+						lg-font="600 16px/1.3 &quot;Manrope&quot;, sans-serif"
+						margin="16px 0px 13px 0px"
+						text-align="center"
+					>
 						What about you?
 					</Text>
 				</Box>
