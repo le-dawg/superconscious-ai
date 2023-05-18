@@ -38,8 +38,15 @@ export default (() => {
 				min-width="24px"
 				min-height="24px"
 			/>
-			<Box min-width="100px" min-height="100px">
-				<Text margin="0px 0px 0px 0px">
+			<Box
+				min-width="100px"
+				min-height="100px"
+				align-self="baseline"
+				display="flex"
+				justify-content="center"
+				align-items="center"
+			>
+				<Text margin="0px 18px 0px 18px" font="--headline3">
 					Superconscious AI AG
 				</Text>
 			</Box>
@@ -57,7 +64,7 @@ export default (() => {
 						margin="0px 18px 0px 18px"
 						md-margin="0px 18px 10px 18px"
 					>
-						Service
+						What We Do
 					</Link>
 					<Link
 						font="--lead"
@@ -69,7 +76,7 @@ export default (() => {
 						text-decoration-line="initial"
 						color="--dark"
 					>
-						About
+						Our Projects
 					</Link>
 					<Link
 						text-decoration-line="initial"
@@ -80,18 +87,7 @@ export default (() => {
 						lg-margin="0px 6px 0px 6px"
 						href="#"
 					>
-						Advisors
-					</Link>
-					<Link
-						padding="6px 6px 6px 6px"
-						margin="0px 18px 0px 18px"
-						lg-margin="0px 6px 0px 6px"
-						href="#"
-						text-decoration-line="initial"
-						color="--dark"
-						font="--lead"
-					>
-						Contact
+						Our Team
 					</Link>
 				</Box>
 			</Components.QuarklycommunityKitMobileSidePanel>
@@ -151,9 +147,6 @@ export default (() => {
 						<Strong>
 							Join us!
 						</Strong>
-						<Link href="https://maroon-lavender-3b758.stackbit.app/">
-							<br />
-						</Link>
 					</Text>
 					<Box
 						display="flex"
@@ -174,7 +167,7 @@ export default (() => {
 							transition="background-color 0.2s ease-in-out 0s"
 							sm-margin="0px 0px 16px 0px"
 							sm-text-align="center"
-							background="--color-green"
+							background="--color-purple"
 							hover-background="--color-primary"
 							hover-transition="background-color 0.2s ease-in-out 0s"
 						>
@@ -276,7 +269,7 @@ export default (() => {
 					sm-font="normal 400 14px/1.5 &quot;Manrope&quot;, sans-serif"
 					md-font="normal 400 14px/1.5 &quot;Manrope&quot;, sans-serif"
 				>
-					Our time is mainly devoted to Generative AIs: we work on efficient (low-resource) LLM use cases as well as image generation.{" "}
+					Our time is devoted to Generative AI: we work on efficient (low-resource) LLM use cases as well as image generation.{" "}
 					<br />
 					As a student-driven research group we look out for the little guy - and represent and underrepresented demographic in the public discourse around AI systems.
 				</Text>
@@ -284,8 +277,22 @@ export default (() => {
 		</Section>
 		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0">
 			<Box min-width="100px" min-height="100px">
-				<Text margin="0px 0px 0px 0px">
-					Some text
+				<Text margin="0px 0px 0px 0px" font="--headline2">
+					Our{" "}
+					<Span
+						color="--purple"
+						font="--headline2"
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						user-select="auto"
+						pointer-events="auto"
+					>
+						Projects
+					</Span>
 				</Text>
 			</Box>
 			<Box display="grid" grid-template-columns="repeat(3, 1fr)" grid-gap="24px 4%" md-grid-template-columns="1fr">
@@ -299,7 +306,10 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 					/>
 					<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
-						Design
+						MLOps
+					</Text>
+					<Text font="--headline4">
+						Learning to operate AI models with productive use in mind
 					</Text>
 					<Text
 						margin="0px 0px 0px 0px"
@@ -321,7 +331,7 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 					/>
 					<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
-						Frontend
+						AI Assistants
 					</Text>
 					<Text
 						margin="0px 0px 0px 0px"
@@ -343,7 +353,7 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 					/>
 					<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
-						Backend
+						The Fun Garage
 					</Text>
 					<Text
 						margin="0px 0px 0px 0px"
@@ -370,12 +380,12 @@ export default (() => {
 				empty-border-width="1px"
 			>
 				<Text font="--headline3" color="--dark" lg-font="normal 600 24px/1.2 &quot;Manrope&quot;, sans-serif" margin="0px 0px 0px 0px">
-					Advisors team
+					Get In Touch With Us!
 				</Text>
 			</Box>
 			<Box
 				empty-border-color="LightGray"
-				width="25%"
+				width="33%"
 				padding="16px 16px 16px 16px"
 				md-width="100%"
 				empty-min-width="64px"
@@ -383,14 +393,26 @@ export default (() => {
 				empty-border-width="1px"
 				empty-border-style="solid"
 			>
-				<Image
-					width="100%"
-					min-height="400px"
-					object-fit="cover"
-					object-position="80% 0%"
-					lg-min-height="200px"
-					src="https://images.unsplash.com/photo-1573496527892-904f897eb744?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
-				/>
+				{" "}
+				<Box
+					width="300px"
+					height="300px"
+					border-radius="50%"
+					overflow="hidden"
+					display="flex"
+					justify-content="center"
+					align-items="center"
+				>
+					<Image
+						width="100%"
+						min-height="300px"
+						object-fit="contain"
+						object-position="80% 0%"
+						lg-min-height="200px"
+						id="l2l"
+						src="https://d2kq0urxkarztv.cloudfront.net/6459474038d4c8003c807e83/4253715/image-0c3efc74-1fdc-4477-8c91-784b2df700ce.png?w=248&e=webp&nll=true"
+					/>
+				</Box>
 				<Box
 					display="flex"
 					flex-direction="column"
@@ -399,13 +421,10 @@ export default (() => {
 					md-align-items="center"
 					md-justify-content="space-between"
 				>
-					<Text lg-font="600 16px/1.3 &quot;Manrope&quot;, sans-serif" margin="16px 0px 13px 0px" font="--headline4" color="--dark">
-						Jane Smith
+					<Text lg-font="600 16px/3 &quot;Manrope&quot;, sans-serif" margin="16px 0px 13px 0px" font="--headline4" color="--dark">
+						Dawid Golebiewski
 					</Text>
-					<SocialMedia margin="0px 0px 0px -3px" justify-content="flex-start" facebook="https://www.facebook.com/quarklyapp" linked-in="https://linkedin.com/">
-						<Override slot="link-facebook" margin="0px 5px 0px 0px">
-							<div />
-						</Override>
+					<SocialMedia margin="0px 0px 0px -3px" justify-content="flex-start" linked-in="https://linkedin.com/">
 						<Override
 							slot="link"
 							border-radius="50%"
@@ -435,7 +454,7 @@ export default (() => {
 			</Box>
 			<Box
 				empty-border-color="LightGray"
-				width="25%"
+				width="33%"
 				padding="16px 16px 16px 16px"
 				md-width="100%"
 				empty-min-width="64px"
@@ -443,14 +462,24 @@ export default (() => {
 				empty-border-width="1px"
 				empty-border-style="solid"
 			>
-				<Image
-					src="https://images.unsplash.com/photo-1573497019236-17f8177b81e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-					width="100%"
-					min-height="400px"
-					object-fit="cover"
-					object-position="80% 0%"
-					lg-min-height="200px"
-				/>
+				<Box
+					width="300px"
+					height="300px"
+					border-radius="50%"
+					overflow="hidden"
+					display="flex"
+					justify-content="center"
+					align-items="center"
+				>
+					<Image
+						src="https://d2kq0urxkarztv.cloudfront.net/6459474038d4c8003c807e83/4253715/image-c048180c-ccf4-42ac-b005-ca5e7483f78f.png?w=254&e=webp&nll=true"
+						width="100%"
+						min-height="400px"
+						object-fit="cover"
+						object-position="80% 0%"
+						lg-min-height="200px"
+					/>
+				</Box>
 				<Box
 					display="flex"
 					flex-direction="column"
@@ -460,7 +489,7 @@ export default (() => {
 					md-justify-content="space-between"
 				>
 					<Text margin="16px 0px 13px 0px" font="--headline4" color="--dark" lg-font="600 16px/1.3 &quot;Manrope&quot;, sans-serif">
-						Laura Walker
+						Stephan Fischer
 					</Text>
 					<SocialMedia margin="0px 0px 0px -3px" justify-content="flex-start" instagram="https://instagram.com/instagram">
 						<Override
@@ -495,7 +524,7 @@ export default (() => {
 			</Box>
 			<Box
 				empty-border-color="LightGray"
-				width="25%"
+				width="33%"
 				padding="16px 16px 16px 16px"
 				md-width="100%"
 				empty-min-width="64px"
@@ -503,14 +532,24 @@ export default (() => {
 				empty-border-width="1px"
 				empty-border-style="solid"
 			>
-				<Image
-					lg-min-height="200px"
-					src="https://images.unsplash.com/photo-1590649613897-1d5c44ca3409?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=540&q=80"
-					width="100%"
-					min-height="400px"
-					object-fit="cover"
-					object-position="80% 0%"
-				/>
+				<Box
+					width="300px"
+					height="300px"
+					border-radius="50%"
+					overflow="hidden"
+					display="flex"
+					justify-content="center"
+					align-items="center"
+				>
+					<Image
+						lg-min-height="200px"
+						src="https://d2kq0urxkarztv.cloudfront.net/6459474038d4c8003c807e83/4253715/image-ca30170d-72d7-4c40-a8e3-c5c1e2b1fac2.jpg?w=248&e=webp&cX=0&cY=0&cW=688&cH=704"
+						width="100%"
+						min-height="400px"
+						object-fit="cover"
+						object-position="80% 0%"
+					/>
+				</Box>
 				<Box
 					md-justify-content="space-between"
 					display="flex"
@@ -520,97 +559,8 @@ export default (() => {
 					md-align-items="center"
 				>
 					<Text font="--headline4" color="--dark" lg-font="600 16px/1.3 &quot;Manrope&quot;, sans-serif" margin="16px 0px 13px 0px">
-						Kristen Hudson
+						What about you?
 					</Text>
-					<SocialMedia linked-in="https://linkedin.com/" margin="0px 0px 0px -3px" justify-content="flex-start">
-						<Override
-							slot="link"
-							border-radius="50%"
-							color="--grey"
-							margin="0 5px 0 5px"
-							width="36px"
-							justify-content="center"
-							background="none"
-							hover-color="--light"
-							hover-background="transparent"
-							padding="5x 5px 5px 5px"
-							height="36px"
-							display="flex"
-							align-items="center"
-						/>
-						<Override
-							slot="icon"
-							color="--dark"
-							padding="5px 5px 5px 5px"
-							border-width="0px"
-							size="34px"
-							border-radius="50px"
-							lg-font="30px sans-serif"
-						/>
-						<Override slot="link-facebook" margin="0px 5px 0px 0px">
-							<div />
-						</Override>
-					</SocialMedia>
-				</Box>
-			</Box>
-			<Box
-				empty-min-width="64px"
-				empty-min-height="64px"
-				empty-border-width="1px"
-				empty-border-style="solid"
-				empty-border-color="LightGray"
-				width="25%"
-				padding="16px 16px 16px 16px"
-				md-width="100%"
-			>
-				<Image
-					width="100%"
-					min-height="400px"
-					object-fit="cover"
-					object-position="30% 0%"
-					lg-min-height="200px"
-					src="https://images.unsplash.com/photo-1590649778473-d017b9013d2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=540&q=80"
-				/>
-				<Box
-					display="flex"
-					flex-direction="column"
-					md-width="100%"
-					md-flex-direction="row"
-					md-align-items="center"
-					md-justify-content="space-between"
-				>
-					<Text margin="16px 0px 13px 0px" font="--headline4" color="--dark" lg-font="600 16px/1.3 &quot;Manrope&quot;, sans-serif">
-						Katelin Stewart
-					</Text>
-					<SocialMedia margin="0px 0px 0px -3px" justify-content="flex-start" facebook="https://www.facebook.com/quarklyapp">
-						<Override
-							slot="link"
-							color="--grey"
-							padding="5x 5px 5px 5px"
-							width="36px"
-							align-items="center"
-							border-radius="50%"
-							hover-color="--light"
-							hover-background="transparent"
-							margin="0 5px 0 5px"
-							height="36px"
-							display="flex"
-							justify-content="center"
-							background="none"
-						/>
-						<Override
-							slot="icon"
-							size="34px"
-							border-radius="50px"
-							lg-font="30px sans-serif"
-							color="--dark"
-							padding="5px 5px 5px 5px"
-							border-width="0px"
-						/>
-						<Override slot="link-facebook" margin="0px 5px 0px 0px">
-							<div />
-						</Override>
-					</SocialMedia>
 				</Box>
 			</Box>
 		</Section>
@@ -631,7 +581,7 @@ export default (() => {
 				md-justify-content="center"
 				sm-padding="16px 16px 16px 0px"
 			>
-				<Image src="https://uploads.quarkly.io/614ce40335c5c8001f7746e0/images/logo.svg?v=2021-09-23T21:07:52.037Z" width="248px" height="auto" max-width="100%" />
+				<Image src="https://uploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png" width="248px" height="auto" max-width="100%" />
 			</Box>
 			<Box
 				width="25%"
@@ -650,36 +600,6 @@ export default (() => {
 					About
 				</Text>
 				<Link
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-				>
-					Destinations
-				</Link>
-				<Link
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-				>
-					Newsroom
-				</Link>
-				<Link
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-				>
-					Partners
-				</Link>
-				<Link
 					href="#"
 					text-decoration-line="initial"
 					color="--dark"
@@ -687,64 +607,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
 				>
-					Carreers
-				</Link>
-			</Box>
-			<Box
-				empty-border-width="1px"
-				padding="16px 16px 16px 16px"
-				display="flex"
-				md-width="50%"
-				sm-padding="16px 16px 16px 0px"
-				empty-min-width="64px"
-				empty-min-height="64px"
-				empty-border-style="solid"
-				empty-border-color="LightGray"
-				width="25%"
-				flex-direction="column"
-			>
-				<Text margin="0px 0px 32px 0px" font="--headline4" color="--dark" lg-font="600 24px/1.3 &quot;Manrope&quot;, sans-serif">
-					Other
-				</Text>
-				<Link
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-				>
-					Terms & Conditions
-				</Link>
-				<Link
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-				>
-					Privacy center
-				</Link>
-				<Link
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-				>
-					Accessibility policy
-				</Link>
-				<Link
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-				>
-					Cookie policy
+					Genesis
 				</Link>
 			</Box>
 			<Box
@@ -761,7 +624,7 @@ export default (() => {
 				md-width="50%"
 			>
 				<Text margin="0px 0px 32px 0px" font="--headline4" color="--dark" lg-font="600 24px/1.3 &quot;Manrope&quot;, sans-serif">
-					Contacts
+					Contact
 				</Text>
 				<Link
 					href="tel:123456789"
@@ -771,7 +634,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
 				>
-					1 (916) 684-4294
+					@superconAI
 				</Link>
 				<Link
 					margin="0px 0px 16px 0px"
@@ -781,7 +644,7 @@ export default (() => {
 					color="--dark"
 					font="--lead"
 				>
-					sale@fantastico.com
+					superconscious[at]tuhh.de
 				</Link>
 				<Link
 					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
@@ -791,7 +654,9 @@ export default (() => {
 					font="--lead"
 					margin="0px 0px 16px 0px"
 				>
-					5121 Laguna Woods Dr, Elk Grove, CA, 95758{"  "}
+					Schlossmühlendamm 32
+					<br />
+					21075 Hamburg, Germany
 				</Link>
 			</Box>
 		</Section>
