@@ -57,13 +57,13 @@ export default (() => {
 				<Box display="flex" justify-content="center" align-items="center" md-flex-direction="column">
 					<Link
 						lg-margin="0px 6px 0px 6px"
-						href="#"
 						text-decoration-line="initial"
 						color="--dark"
 						font="--lead"
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						md-margin="0px 18px 10px 18px"
+						href="#what-do"
 					>
 						What We Do
 					</Link>
@@ -73,7 +73,7 @@ export default (() => {
 						margin="0px 18px 0px 18px"
 						md-margin="0px 18px 10px 18px"
 						lg-margin="0px 6px 0px 6px"
-						href="#"
+						href="#projects"
 						text-decoration-line="initial"
 						color="--dark"
 					>
@@ -86,7 +86,7 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						lg-margin="0px 6px 0px 6px"
-						href="#"
+						href="#touch"
 					>
 						Our Team
 					</Link>
@@ -246,6 +246,7 @@ export default (() => {
 						user-select="auto"
 						pointer-events="auto"
 						border-color="#6f1b6f"
+						id="what-do"
 					>
 						Do
 					</Span>
@@ -293,6 +294,7 @@ export default (() => {
 						hyphens="manual"
 						user-select="auto"
 						pointer-events="auto"
+						id="projects"
 					>
 						Projects
 					</Span>
@@ -547,7 +549,13 @@ export default (() => {
 				empty-min-height="64px"
 				empty-border-width="1px"
 			>
-				<Text font="--headline3" color="--dark" lg-font="normal 600 24px/1.2 &quot;Manrope&quot;, sans-serif" margin="0px 0px 0px 0px">
+				<Text
+					font="--headline3"
+					color="--dark"
+					lg-font="normal 600 24px/1.2 &quot;Manrope&quot;, sans-serif"
+					margin="0px 0px 0px 0px"
+					id="touch"
+				>
 					Get In Touch With Us!
 				</Text>
 			</Box>
@@ -739,7 +747,7 @@ export default (() => {
 					About
 				</Text>
 				<Link
-					href="#"
+					href="/404"
 					text-decoration-line="initial"
 					color="--dark"
 					font="--lead"
