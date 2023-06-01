@@ -4,7 +4,10 @@ import { createGlobalStyle } from "styled-components";
 
 const pageStyles = {
     "404": {},
-    "index": {}
+    "index": {},
+    "mlops": {},
+    "ai-assistants": {},
+    "ai-agents": {}
 };
 
 const PageStyles = createGlobalStyle`

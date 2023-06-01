@@ -169,13 +169,15 @@ export default (() => {
 							sm-margin="0px 0px 16px 0px"
 							sm-text-align="center"
 							background="--color-purple"
-							hover-background="--color-primary"
+							hover-background="--color-white"
 							hover-transition="background-color 0.2s ease-in-out 0s"
+							hover-color="#1b1919"
+							hover-border-width="1px"
 						>
 							Reach out!
 						</Link>
 						<Link
-							href="https://trello.com/w/superconai/home"
+							href="https://trello.com/b/hXlYdet9"
 							padding="10px 24px 10px 24px"
 							color="--darkL1"
 							text-decoration-line="initial"
@@ -188,11 +190,11 @@ export default (() => {
 							transition="color 0.2s ease-in-out 0s,border 0.2s ease-in-out 0s"
 							sm-margin="0px 0px 0px 0px"
 							sm-text-align="center"
-							hover-background="--color-green"
+							hover-background="--color-purple"
 							lg-margin="0px 0px 0px 0px"
 							hover-transition="color 0.2s ease-in-out 0s,border 0.2s ease-in-out 0s"
-							hover-color="--primary"
-							hover-border-color="--color-primary"
+							hover-color="--lightD2"
+							hover-border-color="--color-dark"
 						>
 							Check our Trello
 						</Link>
@@ -393,6 +395,82 @@ export default (() => {
 					</Text>
 					<Text font="--headline4">
 						Not just for student use cases. This is our proof-of-concept factory.
+					</Text>
+					<Box min-width="100px" min-height="100px">
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{" "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Running on-premise LLMs (smol one){"    "}
+						</Text>
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Working with and on image generation models{"\n    "}
+						</Text>
+						{"    "}
+						<Text
+							margin="0px 0px 0px 0px"
+							color="--greyD3"
+							font="--lead"
+							lg-text-align="left"
+							display="flex"
+							align-items="center"
+						>
+							{"      "}
+							<Icon
+								category="md"
+								icon={MdCheckCircle}
+								size="24px"
+								color="--purple"
+								margin="0px 8px 0px 0px"
+							/>
+							{"      "}Fine-tuning models for specific use cases - and filling our KB{"\n    "}
+						</Text>
+						{"  "}
+					</Box>
+				</Box>
+				<Box justify-content="flex-start" flex-direction="column" display="flex">
+					<Icon
+						category="fa"
+						icon={FaHornbill}
+						margin="0px 0px 16px 0px"
+						color="--dark"
+						size="48px"
+						padding="6px 6px 6px 6px"
+					/>
+					<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
+						AI Agents
+					</Text>
+					<Text font="--headline4">
+						Recursion - the final frontier!
 					</Text>
 					<Box min-width="100px" min-height="100px">
 						{"    "}
@@ -661,6 +739,7 @@ export default (() => {
 				empty-min-height="64px"
 				empty-border-width="1px"
 				empty-border-style="solid"
+				max-width="max-content"
 			>
 				<Box
 					width="300px"
@@ -796,7 +875,6 @@ export default (() => {
 				</Link>
 			</Box>
 		</Section>
-		<Box min-width="100px" min-height="100px" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

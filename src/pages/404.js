@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box, Text, Span, Input, Button, Section } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Section, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -25,216 +25,71 @@ export default (() => {
 			<meta name={"msapplication-TileColor"} content={"#f72cf0"} />
 		</Helmet>
 		<Section padding="18px 0 18px 0" quarkly-title="Header">
-			<Override slot="SectionContent" flex-direction="row" align-items="center" justify-content="space-around" />
+			<Override slot="SectionContent" justify-content="space-around" flex-direction="row" align-items="center" />
 			<Image
+				max-height="80px"
+				src="https://uploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?v=2023-05-17T13:02:03.066Z"
+				width="7%"
+				height="auto"
 				lg-max-width="150px"
 				sm-width="50%"
-				max-height="80px"
-				src="https://uploads.quarkly.io/614ce40335c5c8001f7746e0/images/logo.svg?v=2021-09-23T21:07:52.037Z"
-				width="25%"
-				height="auto"
+				flex="0 1 auto"
+				min-width="24px"
+				min-height="24px"
 			/>
+			<Box
+				min-width="100px"
+				min-height="100px"
+				align-self="baseline"
+				display="flex"
+				justify-content="center"
+				align-items="center"
+			>
+				<Text margin="0px 18px 0px 18px" font="--headline3">
+					Superconscious AI AG
+				</Text>
+			</Box>
 			<Components.QuarklycommunityKitMobileSidePanel width="50%">
 				<Override slot="Button Text" lg-display="none" />
 				<Override slot="Button Icon" size="32px" />
 				<Box display="flex" justify-content="center" align-items="center" md-flex-direction="column">
 					<Link
-						margin="0px 18px 0px 18px"
-						md-margin="0px 18px 10px 18px"
+						lg-margin="0px 6px 0px 6px"
 						href="#"
 						text-decoration-line="initial"
 						color="--dark"
 						font="--lead"
-						padding="6px 6px 6px 6px"
-					>
-						Service
-					</Link>
-					<Link
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						md-margin="0px 18px 10px 18px"
+					>
+						What We Do
+					</Link>
+					<Link
+						font="--lead"
+						padding="6px 6px 6px 6px"
+						margin="0px 18px 0px 18px"
+						md-margin="0px 18px 10px 18px"
+						lg-margin="0px 6px 0px 6px"
 						href="#"
 						text-decoration-line="initial"
 						color="--dark"
-						font="--lead"
 					>
-						About
+						Our Projects
 					</Link>
 					<Link
-						href="#"
 						text-decoration-line="initial"
 						color="--dark"
 						font="--lead"
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
-					>
-						Advisors
-					</Link>
-					<Link
-						text-decoration-line="initial"
-						color="--dark"
-						font="--lead"
-						padding="6px 6px 6px 6px"
-						margin="0px 18px 0px 18px"
+						lg-margin="0px 6px 0px 6px"
 						href="#"
 					>
-						Contact
+						Our Team
 					</Link>
 				</Box>
 			</Components.QuarklycommunityKitMobileSidePanel>
-			<Components.QuarklycommunityKitPopup md-display="none" width="25%" display="flex" justify-content="flex-end">
-				<Override
-					slot="Button Open"
-					border-width="1px"
-					border-color="--color-dark"
-					background="rgba(0, 119, 204, 0)"
-					color="--dark"
-					lg-padding="13px 20px 13px 20px"
-					width="180px"
-					lg-margin="0px 16px 0px 0px"
-					border-radius="10px"
-					lg-width="150px"
-					border-style="solid"
-					font="normal 700 16px/1.5 --fontFamily-googleManrope"
-					padding="13px 45px 13px 45px"
-				>
-					Order Now
-				</Override>
-				<Override
-					slot="Wrapper"
-					padding="32px 0px 0px 0px"
-					max-width="700px"
-					border-width="1px"
-					border-style="solid"
-					border-color="--color-grey"
-					border-radius="10px"
-				/>
-				<Override slot="Button Close" size="36px" />
-				<Box display="flex" flex-direction="column" padding="0px 16px 16px 16px">
-					<Box padding="0px 16px 16px 16px">
-						<Text margin="0px 0px 16px 0px" font="--headline3">
-							Let's plan your next vacation
-						</Text>
-						<Text margin="0px 0px 48px 0px" font="--lead">
-							Have a question about your future journey? Wondering about one of our destinations? Ask away! That’s what we’re here for.
-						</Text>
-						<Text margin="0px 0px 0px 0px" font="--headline4">
-							Request details
-						</Text>
-					</Box>
-					<Components.QuarklycommunityKitNetlifyForm display="flex" flex-wrap="wrap" width="100%" successMessage="Thanks for you reply">
-						<Box display="flex" flex-wrap="wrap">
-							<Box width="50%" display="flex" padding="16px 16px 16px 16px" flex-direction="column">
-								<Text margin="0px 0px 8px 0px" font="600 24px/1.3 --fontFamily-googleManrope">
-									First name{" "}
-									<Span color="--green">
-										*
-									</Span>
-								</Text>
-								<Input
-									placeholder="Bill"
-									name="Name"
-									type="text"
-									border-color="--color-light"
-									border-width="1px"
-									border-radius="10px"
-									required
-									padding="14px 16px 14px 16px"
-								/>
-							</Box>
-							<Box display="flex" padding="16px 16px 16px 16px" flex-direction="column" width="50%">
-								<Text margin="0px 0px 8px 0px" font="600 24px/1.3 --fontFamily-googleManrope">
-									Last name (optional)
-								</Text>
-								<Input
-									border-radius="10px"
-									name="Last name"
-									padding="14px 16px 14px 16px"
-									placeholder="Salliwan"
-									type="text"
-									border-color="--color-light"
-									border-width="1px"
-								/>
-							</Box>
-							<Box width="50%" display="flex" padding="16px 16px 16px 16px" flex-direction="column">
-								<Text margin="0px 0px 8px 0px" font="600 24px/1.3 --fontFamily-googleManrope">
-									Email address{"\n\n "}
-									<Span
-										text-overflow="clip"
-										hyphens="manual"
-										color="--green"
-										overflow-wrap="normal"
-										word-break="normal"
-										white-space="normal"
-										text-indent="0"
-									>
-										*
-									</Span>
-								</Text>
-								<Input
-									border-color="--color-light"
-									border-width="1px"
-									border-radius="10px"
-									required
-									padding="14px 16px 14px 16px"
-									placeholder="billslwn@mailbox.com"
-									name="mail"
-									type="email"
-								/>
-							</Box>
-							<Box width="50%" display="flex" padding="16px 16px 16px 16px" flex-direction="column">
-								<Text margin="0px 0px 8px 0px" font="600 24px/1.3 --fontFamily-googleManrope">
-									Phone number (optional)
-								</Text>
-								<Input
-									border-radius="10px"
-									padding="14px 16px 14px 16px"
-									placeholder="1 916 555-17-29"
-									name="tel"
-									type="tel"
-									border-color="--color-light"
-									border-width="1px"
-								/>
-							</Box>
-							<Box
-								padding="16px 16px 16px 16px"
-								width="100%"
-								display="flex"
-								flex-direction="column"
-								align-items="flex-start"
-							>
-								<Text margin="0px 0px 8px 0px" font="600 24px/1.3 --fontFamily-googleManrope">
-									Phone number (optional)
-								</Text>
-								<Input
-									type="text"
-									border-width="1px"
-									border-radius="10px"
-									min-height="150px"
-									padding="14px 16px 14px 16px"
-									name="text"
-									as="textarea"
-									width="100%"
-									placeholder="Enter your message here..."
-									border-color="--color-light"
-								/>
-								<Text margin="8px 0px 32px 0px" font="--base" color="--grey">
-									5000 characters left
-								</Text>
-								<Button
-									background="--color-green"
-									border-radius="10px"
-									hover-opacity=".8"
-									padding="12px 68px 12px 68px"
-									font="--link"
-								>
-									Submit
-								</Button>
-							</Box>
-						</Box>
-					</Components.QuarklycommunityKitNetlifyForm>
-				</Box>
-			</Components.QuarklycommunityKitPopup>
 		</Section>
 		<Section padding="60px 0 60px 0" quarkly-title="HeroBlock">
 			<Text
@@ -244,85 +99,291 @@ export default (() => {
 				lg-font="normal 800 40px/1.2 &quot;Manrope&quot;, sans-serif"
 				md-font="normal 800 28px/1.2 &quot;Manrope&quot;, sans-serif"
 			>
-				PAGE NOT FOUND{"\n\n"}
+				MLOps
 			</Text>
-			<Image
-				src="https://images.unsplash.com/photo-1529847425926-e4c872755a62?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80"
-				width="100%"
-				object-fit="cover"
-				lg-max-height="300px"
-				max-height="600px"
-				object-position="0% 55%"
-				md-max-height="200px"
-				sm-max-height="150px"
-				margin="32px 0px 0px 0px"
-			/>
-			<Text
-				color="--dark"
-				lg-font="normal 800 40px/1.2 &quot;Manrope&quot;, sans-serif"
-				md-font="normal 800 28px/1.2 &quot;Manrope&quot;, sans-serif"
-				lg-margin="14px 0px 0px 0px"
-				margin="34px 0px 0px 0px"
-				font="--headline2"
+			<Section
+				padding="60px 0"
+				sm-padding="40px 0"
+				min-height="600px"
+				sm-min-height="auto"
+				background="--color-light"
+				display="flex"
+				flex-direction="column"
 			>
-				<Span
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-					color="--green"
-					overflow-wrap="normal"
-					word-break="normal"
+				<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" />
+				<Text
+					as="h3"
+					margin="8px 0px 32px"
+					font="--headline2"
+					md-font="--headline2"
+					color="--dark"
+					width="100%"
 				>
-					Ooops!
-				</Span>
-				{" "}It’s 404. This page isn’t found.
-			</Text>
+					What are MLOps?
+				</Text>
+				<Text
+					margin="0px"
+					max-width="600px"
+					font="--base"
+					color="--grey"
+					padding="0px 16px 0px 0px"
+					width="66.66%"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
+					md-margin="0px 0px 24px 0px"
+				>
+					&lt;MLOps Intro&gt;
+				</Text>
+				<Text
+					margin="0px 0px 0px auto"
+					font="--base"
+					color="--grey"
+					width="20%"
+					md-width="100%"
+					md-margin="0px 0px 32px 0px"
+				>
+					The key to successful MLOps is ...{" "}
+				</Text>
+			</Section>
+			<Section padding="80px 0 80px 0" lg-padding="60px 0 60px 0" md-padding="40px 0 40px 0" sm-padding="30px 0 30px 0">
+				<Box margin="0px 0px 32px 0px" display="flex" flex-direction="column" align-items="flex-start">
+					<Text
+						font="--headline1"
+						color="--dark"
+						text-align="center"
+						md-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
+						margin="16px 0px 0px 0px"
+					>
+						Cases
+					</Text>
+					<Text font="--lead" color="--darkL2" max-width="600px">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+					</Text>
+				</Box>
+				<LinkBox
+					display="flex"
+					margin="0px 0px 32px 0px"
+					md-flex-direction="column"
+					md-align-items="center"
+					md-justify-content="center"
+					flex-direction="row"
+					align-items="flex-start"
+					flex-wrap="wrap"
+					lg-margin="0px 0px 16px 0px"
+				>
+					<Box
+						width="60%"
+						padding="0px 16px 0px 0px"
+						align-items="flex-start"
+						display="flex"
+						justify-content="flex-start"
+						margin="0px 0px 0px 0px"
+						md-width="100%"
+						lg-width="100%"
+						lg-padding="0px 0px 0px 0px"
+					>
+						<Image
+							src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=804&q=80"
+							border-radius="24px"
+							max-width="100%"
+							max-height="456px"
+							width="100%"
+							object-fit="none"
+							lg-max-height="392px"
+							sm-max-height="213px"
+						/>
+					</Box>
+					<Box
+						width="40%"
+						padding="0px 0px 0px 16px"
+						display="flex"
+						align-items="flex-start"
+						justify-content="flex-start"
+						md-width="100%"
+						sm-align-items="flex-start"
+						sm-flex-direction="column"
+						sm-justify-content="flex-start"
+						flex-direction="column"
+						lg-width="100%"
+						lg-flex-direction="row"
+						lg-justify-content="space-between"
+						lg-padding="16px 12px 16px 12px"
+					>
+						<Text margin="0px 0px 16px 0px" font="--lead" color="--darkL2" opacity="0.5">
+							2021
+						</Text>
+						<Box padding="0px 50px 0px 0px" lg-width="70%" sm-width="100%" lg-padding="0px 0px 0px 0px">
+							<Text margin="0px 0px 8px 0px" font="--headline3" color="--dark">
+								Finance Dashboard
+							</Text>
+							<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							</Text>
+						</Box>
+					</Box>
+				</LinkBox>
+				<LinkBox
+					display="flex"
+					margin="0px 0px 32px 0px"
+					md-flex-direction="column"
+					md-align-items="center"
+					md-justify-content="center"
+					flex-direction="row"
+					align-items="flex-start"
+					flex-wrap="wrap"
+					lg-margin="0px 0px 16px 0px"
+				>
+					<Box
+						width="60%"
+						padding="0px 16px 0px 0px"
+						align-items="flex-start"
+						display="flex"
+						justify-content="flex-start"
+						margin="0px 0px 0px 0px"
+						md-width="100%"
+						lg-width="100%"
+						lg-padding="0px 0px 0px 0px"
+					>
+						<Image
+							src="https://images.unsplash.com/photo-1623500006871-81fd925ddac3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+							border-radius="24px"
+							max-width="100%"
+							max-height="456px"
+							width="100%"
+							object-fit="none"
+							lg-max-height="392px"
+							sm-max-height="213px"
+						/>
+					</Box>
+					<Box
+						width="40%"
+						padding="0px 0px 0px 16px"
+						display="flex"
+						align-items="flex-start"
+						justify-content="flex-start"
+						md-width="100%"
+						sm-align-items="flex-start"
+						sm-flex-direction="column"
+						sm-justify-content="flex-start"
+						flex-direction="column"
+						lg-width="100%"
+						lg-flex-direction="row"
+						lg-justify-content="space-between"
+						lg-padding="16px 12px 16px 12px"
+					>
+						<Text margin="0px 0px 16px 0px" font="--lead" color="--darkL2" opacity="0.5">
+							2021
+						</Text>
+						<Box padding="0px 50px 0px 0px" lg-width="70%" lg-padding="0px 0px 0px 0px" sm-width="100%">
+							<Text margin="0px 0px 8px 0px" font="--headline3" color="--dark">
+								Logotype
+							</Text>
+							<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							</Text>
+						</Box>
+					</Box>
+				</LinkBox>
+				<LinkBox
+					display="flex"
+					margin="0px 0px 32px 0px"
+					md-flex-direction="column"
+					md-align-items="center"
+					md-justify-content="center"
+					flex-direction="row"
+					align-items="flex-start"
+					flex-wrap="wrap"
+					lg-margin="0px 0px 16px 0px"
+				>
+					<Box
+						width="60%"
+						padding="0px 16px 0px 0px"
+						align-items="flex-start"
+						display="flex"
+						justify-content="flex-start"
+						margin="0px 0px 0px 0px"
+						md-width="100%"
+						lg-width="100%"
+						lg-padding="0px 0px 0px 0px"
+					>
+						<Image
+							src="https://images.unsplash.com/photo-1491951931722-5a446214b4e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=806&q=80"
+							border-radius="24px"
+							max-width="100%"
+							max-height="456px"
+							width="100%"
+							object-fit="none"
+							lg-max-height="392px"
+							sm-max-height="213px"
+						/>
+					</Box>
+					<Box
+						width="40%"
+						padding="0px 0px 0px 16px"
+						display="flex"
+						align-items="flex-start"
+						justify-content="flex-start"
+						md-width="100%"
+						sm-align-items="flex-start"
+						sm-flex-direction="column"
+						sm-justify-content="flex-start"
+						flex-direction="column"
+						lg-width="100%"
+						lg-flex-direction="row"
+						lg-justify-content="space-between"
+						lg-padding="16px 12px 16px 12px"
+					>
+						<Text margin="0px 0px 16px 0px" font="--lead" color="--darkL2" opacity="0.5">
+							2021
+						</Text>
+						<Box padding="0px 50px 0px 0px" lg-width="70%" lg-padding="0px 0px 0px 0px" sm-width="100%">
+							<Text margin="0px 0px 8px 0px" font="--headline3" color="--dark">
+								SMM
+							</Text>
+							<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							</Text>
+						</Box>
+					</Box>
+				</LinkBox>
+			</Section>
 		</Section>
 		<Section padding="54px 0 30px 0" quarkly-title="Footer" lg-padding="30px 0 20px 0">
 			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
 			<Box
-				empty-min-width="64px"
 				empty-min-height="64px"
 				empty-border-width="1px"
-				width="25%"
-				md-align-items="center"
-				sm-margin="0px 0px 16px 0px"
 				empty-border-style="solid"
+				width="25%"
+				md-width="50%"
+				sm-margin="0px 0px 16px 0px"
+				empty-min-width="64px"
 				empty-border-color="LightGray"
 				padding="16px 16px 16px 16px"
+				md-align-items="flex-start"
 				md-display="flex"
 				md-justify-content="center"
-				md-width="50%"
+				sm-padding="16px 16px 16px 0px"
 			>
-				<Image src="https://uploads.quarkly.io/614ce40335c5c8001f7746e0/images/logo.svg?v=2021-09-23T21:07:52.037Z" width="248px" height="auto" max-width="100%" />
+				<Image src="https://uploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png" width="248px" height="auto" max-width="100%" />
 			</Box>
 			<Box
-				empty-min-width="64px"
-				empty-border-style="solid"
-				padding="16px 16px 16px 16px"
 				width="25%"
-				display="flex"
 				flex-direction="column"
 				md-width="50%"
+				sm-padding="16px 16px 16px 0px"
+				empty-border-style="solid"
 				empty-min-height="64px"
 				empty-border-width="1px"
 				empty-border-color="LightGray"
+				padding="16px 16px 16px 16px"
+				display="flex"
+				empty-min-width="64px"
 			>
-				<Text font="--headline4" color="--dark" lg-font="600 24px/1.3 &quot;Manrope&quot;, sans-serif" margin="0px 0px 32px 0px">
+				<Text margin="0px 0px 32px 0px" font="--headline4" color="--dark" lg-font="600 24px/1.3 &quot;Manrope&quot;, sans-serif">
 					About
 				</Text>
 				<Link
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-				>
-					Destinations
-				</Link>
-				<Link
 					href="#"
 					text-decoration-line="initial"
 					color="--dark"
@@ -330,129 +391,56 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
 				>
-					Newsroom
-				</Link>
-				<Link
-					font="--lead"
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-				>
-					Partners
-				</Link>
-				<Link
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-				>
-					Carreers
+					Genesis
 				</Link>
 			</Box>
 			<Box
 				empty-min-height="64px"
 				empty-border-width="1px"
-				empty-border-style="solid"
 				empty-border-color="LightGray"
 				padding="16px 16px 16px 16px"
-				flex-direction="column"
-				md-width="50%"
-				empty-min-width="64px"
-				width="25%"
 				display="flex"
-			>
-				<Text margin="0px 0px 32px 0px" font="--headline4" color="--dark" lg-font="600 24px/1.3 &quot;Manrope&quot;, sans-serif">
-					Other
-				</Text>
-				<Link
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-				>
-					Terms & Conditions
-				</Link>
-				<Link
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-				>
-					Privacy center
-				</Link>
-				<Link
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-				>
-					Accessibility policy
-				</Link>
-				<Link
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="#"
-					text-decoration-line="initial"
-					color="--dark"
-					font="--lead"
-					margin="0px 0px 16px 0px"
-				>
-					Cookie policy
-				</Link>
-			</Box>
-			<Box
-				md-width="50%"
+				flex-direction="column"
+				sm-padding="16px 16px 16px 0px"
 				empty-min-width="64px"
-				empty-border-width="1px"
 				empty-border-style="solid"
-				empty-border-color="LightGray"
-				display="flex"
-				flex-direction="column"
-				empty-min-height="64px"
-				padding="16px 16px 16px 16px"
 				width="25%"
+				md-width="50%"
 			>
 				<Text margin="0px 0px 32px 0px" font="--headline4" color="--dark" lg-font="600 24px/1.3 &quot;Manrope&quot;, sans-serif">
-					Contacts
+					Contact
 				</Text>
 				<Link
-					font="--lead"
-					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
 					href="tel:123456789"
 					text-decoration-line="initial"
 					color="--dark"
-				>
-					1 (916) 684-4294
-				</Link>
-				<Link
-					text-decoration-line="initial"
-					color="--dark"
 					font="--lead"
 					margin="0px 0px 16px 0px"
 					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="mailto:mail@gmail.com"
 				>
-					sale@fantastico.com
+					@superconAI
 				</Link>
 				<Link
+					margin="0px 0px 16px 0px"
+					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
+					href="mailto:mail@gmail.com"
+					text-decoration-line="initial"
+					color="--dark"
+					font="--lead"
+				>
+					superconscious[at]tuhh.de
+				</Link>
+				<Link
+					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
 					href="#"
 					text-decoration-line="initial"
 					color="--dark"
 					font="--lead"
 					margin="0px 0px 16px 0px"
-					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
 				>
-					5121 Laguna Woods Dr, Elk Grove, CA, 95758{"  "}
+					Schlossmühlendamm 32
+					<br />
+					21075 Hamburg, Germany
 				</Link>
 			</Box>
 		</Section>

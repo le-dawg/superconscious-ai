@@ -6,7 +6,10 @@ export default {
 			"name": "root",
 			"children": [
 				"6464cddb0343c10023977ec8",
-				"6464cddb0343c10023977ec4"
+				"6464cddb0343c10023977ec4",
+				"6467f205820441001fb14f0d",
+				"6467f2123d9fe5001ef14d21",
+				"6467f21d3d9fe5001ef14d2d"
 			]
 		},
 		"6464cddb0343c10023977ec4": {
@@ -16,8 +19,23 @@ export default {
 		},
 		"6464cddb0343c10023977ec8": {
 			"id": "6464cddb0343c10023977ec8",
-			"name": "404",
+			"name": "404 rew",
 			"pageUrl": "404"
+		},
+		"6467f205820441001fb14f0d": {
+			"id": "6467f205820441001fb14f0d",
+			"pageUrl": "mlops",
+			"name": "MLOps"
+		},
+		"6467f2123d9fe5001ef14d21": {
+			"id": "6467f2123d9fe5001ef14d21",
+			"pageUrl": "ai-assistants",
+			"name": "AI Assistants"
+		},
+		"6467f21d3d9fe5001ef14d2d": {
+			"id": "6467f21d3d9fe5001ef14d2d",
+			"pageUrl": "ai-agents",
+			"name": "AI Agents"
 		}
 	},
 	"mode": "production",
