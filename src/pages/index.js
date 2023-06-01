@@ -746,7 +746,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
 				>
-					Genesis
+					Genesis // Our goals
 				</Link>
 			</Box>
 			<Box
