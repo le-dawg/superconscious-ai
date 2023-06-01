@@ -19,7 +19,7 @@ export default {
 		},
 		"6464cddb0343c10023977ec8": {
 			"id": "6464cddb0343c10023977ec8",
-			"name": "404 rew",
+			"name": "genesis-goals",
 			"pageUrl": "404"
 		},
 		"6467f205820441001fb14f0d": {

@@ -1,10 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Section, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Section, Icon, Strong, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
+import { MdHelp } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"404"} />
@@ -91,262 +92,151 @@ export default (() => {
 				</Box>
 			</Components.QuarklycommunityKitMobileSidePanel>
 		</Section>
-		<Section padding="60px 0 60px 0" quarkly-title="HeroBlock">
-			<Text
-				margin="0px 0px 0px 0px"
-				font="--headline1"
-				color="--dark"
-				lg-font="normal 800 40px/1.2 &quot;Manrope&quot;, sans-serif"
-				md-font="normal 800 28px/1.2 &quot;Manrope&quot;, sans-serif"
-			>
-				MLOps
+		<Section color="--dark">
+			<Override slot="SectionContent" />
+			<Text as="h2" font="--headline1" md-font="--headline2" margin="20px 0 0 0">
+				Genesis // Our Goals
 			</Text>
-			<Section
-				padding="60px 0"
-				sm-padding="40px 0"
-				min-height="600px"
-				sm-min-height="auto"
-				background="--color-light"
-				display="flex"
-				flex-direction="column"
+			<Box
+				margin="36px 0 0 0"
+				padding="0 0 0 54px"
+				sm-padding="54px 0 0 0"
+				position="relative"
+				max-width="800px"
+				sm-margin="24px 0 0 0"
 			>
-				<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" />
-				<Text
-					as="h3"
-					margin="8px 0px 32px"
-					font="--headline2"
-					md-font="--headline2"
-					color="--dark"
-					width="100%"
-				>
-					What are MLOps?
+				<Icon
+					position="absolute"
+					top="8px"
+					left="0"
+					size="36px"
+					color="--primary"
+					category="md"
+					icon={MdHelp}
+				/>
+				<Text as="h3" font="--headline3" margin="10px 0">
+					Where did Superconscious AG come from?
 				</Text>
-				<Text
-					margin="0px"
-					max-width="600px"
-					font="--base"
-					color="--grey"
-					padding="0px 16px 0px 0px"
-					width="66.66%"
-					md-width="100%"
-					md-padding="0px 0px 0px 0px"
-					md-margin="0px 0px 24px 0px"
-				>
-					&lt;MLOps Intro&gt;
+				<Text as="p" font="--lead" margin="10px 0" color="--greyD2">
+					It all begins with an idea. In 2019 our founders were on a neuroscience hypewave. With experience in BCI and alternate states of consciousness we sought to methodically explore how to grow and escape the mental limitations put on us. We raised a lot of time-series data from EEGs after running VR + EEG experiments in our rooms. COVID broke apart the team, most people graduated. What we were left with was data. So we started generating EEG-based art, which sort of worked. And then DALL-E, GPT-3.5 and Stable Diffusion happened.{" "}
+					<br />
+					<br />
+					And we knew what to do from then on out.
 				</Text>
-				<Text
-					margin="0px 0px 0px auto"
-					font="--base"
-					color="--grey"
-					width="20%"
-					md-width="100%"
-					md-margin="0px 0px 32px 0px"
-				>
-					The key to successful MLOps is ...{" "}
+			</Box>
+			<Box
+				margin="36px 0 0 0"
+				padding="0 0 0 54px"
+				sm-padding="54px 0 0 0"
+				position="relative"
+				max-width="800px"
+				sm-margin="24px 0 0 0"
+			>
+				<Icon
+					position="absolute"
+					top="8px"
+					left="0"
+					size="36px"
+					color="--primary"
+					category="md"
+					icon={MdHelp}
+				/>
+				<Text as="h3" font="--headline3" margin="10px 0">
+					What do you want to achieve?
 				</Text>
-			</Section>
-			<Section padding="80px 0 80px 0" lg-padding="60px 0 60px 0" md-padding="40px 0 40px 0" sm-padding="30px 0 30px 0">
-				<Box margin="0px 0px 32px 0px" display="flex" flex-direction="column" align-items="flex-start">
-					<Text
-						font="--headline1"
-						color="--dark"
-						text-align="center"
-						md-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
-						margin="16px 0px 0px 0px"
+				<Text as="p" font="--lead" margin="10px 0" color="--greyD2">
+					We want to be an internal accelerator for AI projects launched by students in Hamburg. We lament that Bologna has destroyed the much-cherished free-wheeling explorative study culture and instead led to students being so dialed into their studies they only have 20 minutes per day for memes before they have to race to prepare for the next underwhelming deliverable at uni ...
+					<br />
+					<br />
+					All while the world of technology, human-computer interaction and frankly, all culture is rapidly changing, right in front of our eyes. But the eyes are wide shut.
+					<br />
+					<br />
+					Our express goal is to{" "}
+					<br />
+					<br />
+					- help students from any local university play and work on ML-based projects, be they art, AI agents or simple data science
+					<br />
+					- when opportune: help transition into a startup format if an idea gains traction
+					<br />
+					- showcase AI applications that are directly beneficial to the core processes of the university and city
+				</Text>
+			</Box>
+			<Box
+				margin="36px 0"
+				padding="0 0 0 54px"
+				sm-padding="54px 0 0 0"
+				position="relative"
+				max-width="800px"
+				sm-margin="24px 0 36px 0"
+			>
+				<Icon
+					position="absolute"
+					top="8px"
+					left="0"
+					size="36px"
+					color="--primary"
+					category="md"
+					icon={MdHelp}
+				/>
+				<Text as="h3" font="--headline3" margin="10px 0">
+					What is in it for me?
+				</Text>
+				<Text as="p" font="--lead" margin="10px 0" color="--greyD2">
+					It is really simple: education without fun and experimentation leads to worse outcomes. You need a passion. We are a vehicle for all those whose passion lies in{" "}
+					<br />
+					<br />
+					- automating parts of their lives at a high fidelity
+					<br />
+					- experimenting with state of the art machine learning technology{" "}
+					<br />
+					- building ML/AI-enabled software to help fellow students
+					<br />
+					<br />
+					and most importantly
+					<br />
+					<br />
+					<Strong
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						user-select="auto"
+						pointer-events="auto"
 					>
-						Cases
+						- share what you learned.{" "}
+						<br />
+						<br />
+						In the end, you are the master of your fate. The choice is simple:
+						<br />
+					</Strong>
+				</Text>
+				<Box min-width="100px" min-height="100px">
+					<Text margin="0px 0px 0px 0px" max-width="25vw" text-align="center" font="24px Roboto">
+						<br />
+						<Link href="https://quarkly.io/preview#/https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow">
+							Homo Deus
+						</Link>
+						{" "}or{" "}
+						<Link href="https://quarkly.io/preview#/https://en.wikipedia.org/wiki/Herd_behavior#Sheeple">
+							Sheeple
+						</Link>
+						{" "}?
 					</Text>
-					<Text font="--lead" color="--darkL2" max-width="600px">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-					</Text>
+					<Image
+						src="https://pbs.twimg.com/media/EewgJk5VoAAQY2I?format=jpg&name=4096x4096"
+						display="block"
+						object-fit="scale-down"
+						className="redbluepill"
+						width="50% content-box"
+						height="50% content-box"
+						max-width="25vw"
+						margin="1vw 0px 0px 0px"
+						box-shadow="5px 0 25px 1px rgba(214, 18, 171, 0.66)"
+					/>
 				</Box>
-				<LinkBox
-					display="flex"
-					margin="0px 0px 32px 0px"
-					md-flex-direction="column"
-					md-align-items="center"
-					md-justify-content="center"
-					flex-direction="row"
-					align-items="flex-start"
-					flex-wrap="wrap"
-					lg-margin="0px 0px 16px 0px"
-				>
-					<Box
-						width="60%"
-						padding="0px 16px 0px 0px"
-						align-items="flex-start"
-						display="flex"
-						justify-content="flex-start"
-						margin="0px 0px 0px 0px"
-						md-width="100%"
-						lg-width="100%"
-						lg-padding="0px 0px 0px 0px"
-					>
-						<Image
-							src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=804&q=80"
-							border-radius="24px"
-							max-width="100%"
-							max-height="456px"
-							width="100%"
-							object-fit="none"
-							lg-max-height="392px"
-							sm-max-height="213px"
-						/>
-					</Box>
-					<Box
-						width="40%"
-						padding="0px 0px 0px 16px"
-						display="flex"
-						align-items="flex-start"
-						justify-content="flex-start"
-						md-width="100%"
-						sm-align-items="flex-start"
-						sm-flex-direction="column"
-						sm-justify-content="flex-start"
-						flex-direction="column"
-						lg-width="100%"
-						lg-flex-direction="row"
-						lg-justify-content="space-between"
-						lg-padding="16px 12px 16px 12px"
-					>
-						<Text margin="0px 0px 16px 0px" font="--lead" color="--darkL2" opacity="0.5">
-							2021
-						</Text>
-						<Box padding="0px 50px 0px 0px" lg-width="70%" sm-width="100%" lg-padding="0px 0px 0px 0px">
-							<Text margin="0px 0px 8px 0px" font="--headline3" color="--dark">
-								Finance Dashboard
-							</Text>
-							<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							</Text>
-						</Box>
-					</Box>
-				</LinkBox>
-				<LinkBox
-					display="flex"
-					margin="0px 0px 32px 0px"
-					md-flex-direction="column"
-					md-align-items="center"
-					md-justify-content="center"
-					flex-direction="row"
-					align-items="flex-start"
-					flex-wrap="wrap"
-					lg-margin="0px 0px 16px 0px"
-				>
-					<Box
-						width="60%"
-						padding="0px 16px 0px 0px"
-						align-items="flex-start"
-						display="flex"
-						justify-content="flex-start"
-						margin="0px 0px 0px 0px"
-						md-width="100%"
-						lg-width="100%"
-						lg-padding="0px 0px 0px 0px"
-					>
-						<Image
-							src="https://images.unsplash.com/photo-1623500006871-81fd925ddac3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-							border-radius="24px"
-							max-width="100%"
-							max-height="456px"
-							width="100%"
-							object-fit="none"
-							lg-max-height="392px"
-							sm-max-height="213px"
-						/>
-					</Box>
-					<Box
-						width="40%"
-						padding="0px 0px 0px 16px"
-						display="flex"
-						align-items="flex-start"
-						justify-content="flex-start"
-						md-width="100%"
-						sm-align-items="flex-start"
-						sm-flex-direction="column"
-						sm-justify-content="flex-start"
-						flex-direction="column"
-						lg-width="100%"
-						lg-flex-direction="row"
-						lg-justify-content="space-between"
-						lg-padding="16px 12px 16px 12px"
-					>
-						<Text margin="0px 0px 16px 0px" font="--lead" color="--darkL2" opacity="0.5">
-							2021
-						</Text>
-						<Box padding="0px 50px 0px 0px" lg-width="70%" lg-padding="0px 0px 0px 0px" sm-width="100%">
-							<Text margin="0px 0px 8px 0px" font="--headline3" color="--dark">
-								Logotype
-							</Text>
-							<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							</Text>
-						</Box>
-					</Box>
-				</LinkBox>
-				<LinkBox
-					display="flex"
-					margin="0px 0px 32px 0px"
-					md-flex-direction="column"
-					md-align-items="center"
-					md-justify-content="center"
-					flex-direction="row"
-					align-items="flex-start"
-					flex-wrap="wrap"
-					lg-margin="0px 0px 16px 0px"
-				>
-					<Box
-						width="60%"
-						padding="0px 16px 0px 0px"
-						align-items="flex-start"
-						display="flex"
-						justify-content="flex-start"
-						margin="0px 0px 0px 0px"
-						md-width="100%"
-						lg-width="100%"
-						lg-padding="0px 0px 0px 0px"
-					>
-						<Image
-							src="https://images.unsplash.com/photo-1491951931722-5a446214b4e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=806&q=80"
-							border-radius="24px"
-							max-width="100%"
-							max-height="456px"
-							width="100%"
-							object-fit="none"
-							lg-max-height="392px"
-							sm-max-height="213px"
-						/>
-					</Box>
-					<Box
-						width="40%"
-						padding="0px 0px 0px 16px"
-						display="flex"
-						align-items="flex-start"
-						justify-content="flex-start"
-						md-width="100%"
-						sm-align-items="flex-start"
-						sm-flex-direction="column"
-						sm-justify-content="flex-start"
-						flex-direction="column"
-						lg-width="100%"
-						lg-flex-direction="row"
-						lg-justify-content="space-between"
-						lg-padding="16px 12px 16px 12px"
-					>
-						<Text margin="0px 0px 16px 0px" font="--lead" color="--darkL2" opacity="0.5">
-							2021
-						</Text>
-						<Box padding="0px 50px 0px 0px" lg-width="70%" lg-padding="0px 0px 0px 0px" sm-width="100%">
-							<Text margin="0px 0px 8px 0px" font="--headline3" color="--dark">
-								SMM
-							</Text>
-							<Text margin="0px 0px 0px 0px" font="--lead" color="--darkL2">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							</Text>
-						</Box>
-					</Box>
-				</LinkBox>
-			</Section>
+			</Box>
 		</Section>
 		<Section padding="54px 0 30px 0" quarkly-title="Footer" lg-padding="30px 0 20px 0">
 			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
@@ -384,14 +274,14 @@ export default (() => {
 					About
 				</Text>
 				<Link
-					href="#"
 					text-decoration-line="initial"
 					color="--dark"
 					font="--lead"
 					margin="0px 0px 16px 0px"
 					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
+					href="/404"
 				>
-					Genesis
+					Genesis / Our Goals
 				</Link>
 			</Box>
 			<Box
@@ -444,6 +334,7 @@ export default (() => {
 				</Link>
 			</Box>
 		</Section>
+		<Input display="block" placeholder-color="LightGray" background="white" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

@@ -49,7 +49,10 @@ export default {
 		"serifTimes": "Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif",
 		"serifGeorgia": "Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif",
 		"serifGaramond": "'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif",
-		"googleManrope": "\"Manrope\", sans-serif"
+		"googleManrope": "\"Manrope\", sans-serif",
+		"googleRoboto": "\"Roboto\", sans-serif",
+		"googleOpenSans": "\"Open Sans\", sans-serif",
+		"googleNotoSansJp": "\"Noto Sans JP\", sans-serif"
 	},
 	"font": {
 		"headline1": "normal 800 80px/1.2 --fontFamily-googleManrope",
@@ -169,6 +172,66 @@ export default {
 					"600",
 					"700",
 					"800"
+				]
+			}
+		},
+		"Roboto": {
+			"family": "Roboto",
+			"type": "google-fonts",
+			"meta": {
+				"category": "sans-serif",
+				"variants": [
+					"100",
+					"100italic",
+					"300",
+					"300italic",
+					"regular",
+					"italic",
+					"500",
+					"500italic",
+					"700",
+					"700italic",
+					"900",
+					"900italic"
+				]
+			}
+		},
+		"Open Sans": {
+			"family": "Open Sans",
+			"type": "google-fonts",
+			"meta": {
+				"category": "sans-serif",
+				"variants": [
+					"300",
+					"regular",
+					"500",
+					"600",
+					"700",
+					"800",
+					"300italic",
+					"italic",
+					"500italic",
+					"600italic",
+					"700italic",
+					"800italic"
+				]
+			}
+		},
+		"Noto Sans JP": {
+			"family": "Noto Sans JP",
+			"type": "google-fonts",
+			"meta": {
+				"category": "sans-serif",
+				"variants": [
+					"100",
+					"200",
+					"300",
+					"regular",
+					"500",
+					"600",
+					"700",
+					"800",
+					"900"
 				]
 			}
 		}

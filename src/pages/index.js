@@ -414,7 +414,7 @@ export default (() => {
 								color="--purple"
 								margin="0px 8px 0px 0px"
 							/>
-							{"      "}Running on-premise LLMs (smol one){"    "}
+							{"      "}Discord-based Q&A bot for video lectures (Youtube only ATM)
 						</Text>
 						{"    "}
 						<Text
@@ -433,7 +433,7 @@ export default (() => {
 								color="--purple"
 								margin="0px 8px 0px 0px"
 							/>
-							{"      "}Working with and on image generation models{"\n    "}
+							{"  "}Absorbing paper-based student knowledge repos into a chatLLM{"     "}
 						</Text>
 						{"    "}
 						<Text
@@ -452,83 +452,7 @@ export default (() => {
 								color="--purple"
 								margin="0px 8px 0px 0px"
 							/>
-							{"      "}Fine-tuning models for specific use cases - and filling our KB{"\n    "}
-						</Text>
-						{"  "}
-					</Box>
-				</Box>
-				<Box justify-content="flex-start" flex-direction="column" display="flex">
-					<Icon
-						category="fa"
-						icon={FaHornbill}
-						margin="0px 0px 16px 0px"
-						color="--dark"
-						size="48px"
-						padding="6px 6px 6px 6px"
-					/>
-					<Text margin="0px 0px 18px 0px" color="--darkL2" font="--headline3" lg-text-align="left">
-						AI Agents
-					</Text>
-					<Text font="--headline4">
-						Recursion - the final frontier!
-					</Text>
-					<Box min-width="100px" min-height="100px">
-						{"    "}
-						<Text
-							margin="0px 0px 0px 0px"
-							color="--greyD3"
-							font="--lead"
-							lg-text-align="left"
-							display="flex"
-							align-items="center"
-						>
-							{" "}
-							<Icon
-								category="md"
-								icon={MdCheckCircle}
-								size="24px"
-								color="--purple"
-								margin="0px 8px 0px 0px"
-							/>
-							{"      "}Running on-premise LLMs (smol one){"    "}
-						</Text>
-						{"    "}
-						<Text
-							margin="0px 0px 0px 0px"
-							color="--greyD3"
-							font="--lead"
-							lg-text-align="left"
-							display="flex"
-							align-items="center"
-						>
-							{"      "}
-							<Icon
-								category="md"
-								icon={MdCheckCircle}
-								size="24px"
-								color="--purple"
-								margin="0px 8px 0px 0px"
-							/>
-							{"      "}Working with and on image generation models{"\n    "}
-						</Text>
-						{"    "}
-						<Text
-							margin="0px 0px 0px 0px"
-							color="--greyD3"
-							font="--lead"
-							lg-text-align="left"
-							display="flex"
-							align-items="center"
-						>
-							{"      "}
-							<Icon
-								category="md"
-								icon={MdCheckCircle}
-								size="24px"
-								color="--purple"
-								margin="0px 8px 0px 0px"
-							/>
-							{"      "}Fine-tuning models for specific use cases - and filling our KB{"\n    "}
+							{"      "}Can we run our own coursology.io ?{" "}
 						</Text>
 						{"  "}
 					</Box>
@@ -566,7 +490,7 @@ export default (() => {
 								color="--purple"
 								margin="0px 8px 0px 0px"
 							/>
-							{"      "}Running on-premise LLMs (smol one){"\n    "}
+							{"      "}Automated trolling on /r/TU_HH
 						</Text>
 						{"    "}
 						<Text
@@ -585,7 +509,7 @@ export default (() => {
 								color="--purple"
 								margin="0px 8px 0px 0px"
 							/>
-							{"      "}Working with and on image generation models{"\n    "}
+							{"    "}Personalized pin-ups ( ͡° ͜ʖ ͡°)
 						</Text>
 						{"    "}
 						<Text
@@ -604,7 +528,7 @@ export default (() => {
 								color="--purple"
 								margin="0px 8px 0px 0px"
 							/>
-							{"      "}Fine-tuning models for specific use cases - and filling our KB{"\n    "}
+							{"    "}Your project here!{"    "}
 						</Text>
 						{"  "}
 					</Box>
