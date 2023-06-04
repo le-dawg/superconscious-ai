@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Section, Span, Strong, Icon } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Em, Section, Span, Strong, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, SocialMedia } from "@quarkly/components";
@@ -47,7 +47,7 @@ export default (() => {
 				justify-content="center"
 				align-items="center"
 			>
-				<Text margin="0px 18px 0px 18px" font="--headline3">
+				<Text margin="0px 18px 0px 18px" font="--headline4">
 					Superconscious AI AG
 				</Text>
 			</Box>
@@ -78,6 +78,20 @@ export default (() => {
 						color="--dark"
 					>
 						Our Projects
+					</Link>
+					<Link
+						font="--lead"
+						padding="6px 6px 6px 6px"
+						margin="0px 18px 0px 18px"
+						md-margin="0px 18px 10px 18px"
+						lg-margin="0px 6px 0px 6px"
+						href="/resources"
+						text-decoration-line="initial"
+						color="--dark"
+					>
+						<Em>
+							Resources
+						</Em>
 					</Link>
 					<Link
 						text-decoration-line="initial"

@@ -24,8 +24,8 @@ export default {
 		},
 		"6467f205820441001fb14f0d": {
 			"id": "6467f205820441001fb14f0d",
-			"pageUrl": "mlops",
-			"name": "MLOps"
+			"pageUrl": "resources",
+			"name": "Resources"
 		},
 		"6467f2123d9fe5001ef14d21": {
 			"id": "6467f2123d9fe5001ef14d21",

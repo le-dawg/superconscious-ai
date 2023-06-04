@@ -1,6 +1,6 @@
 module.exports = [
 	"/index/",
-	"/mlops/",
+	"/resources/",
 	"/ai-assistants/",
 	"/ai-agents/",
 	"/404/",
