@@ -191,7 +191,7 @@ export default (() => {
 							Reach out!
 						</Link>
 						<Link
-							href="https://trello.com/b/hXlYdet9"
+							href="https://trello.com/b/NeoOMCKM/superconscious-knowledge-base"
 							padding="10px 24px 10px 24px"
 							color="--darkL1"
 							text-decoration-line="initial"
