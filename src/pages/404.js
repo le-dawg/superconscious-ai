@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, Box, Section, Icon, Strong, Input } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Box, Em, Section, Icon, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -46,7 +46,7 @@ export default (() => {
 				justify-content="center"
 				align-items="center"
 			>
-				<Text margin="0px 18px 0px 18px" font="--headline3">
+				<Text margin="0px 18px 0px 18px" font="--headline4">
 					Superconscious AI AG
 				</Text>
 			</Box>
@@ -55,24 +55,12 @@ export default (() => {
 				<Override slot="Button Icon" size="32px" />
 				<Box display="flex" justify-content="center" align-items="center" md-flex-direction="column">
 					<Link
-						lg-margin="0px 6px 0px 6px"
-						href="#"
-						text-decoration-line="initial"
-						color="--dark"
-						font="--lead"
-						padding="6px 6px 6px 6px"
-						margin="0px 18px 0px 18px"
-						md-margin="0px 18px 10px 18px"
-					>
-						What We Do
-					</Link>
-					<Link
 						font="--lead"
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						md-margin="0px 18px 10px 18px"
 						lg-margin="0px 6px 0px 6px"
-						href="#"
+						href="/index#projects"
 						text-decoration-line="initial"
 						color="--dark"
 					>
@@ -85,9 +73,35 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						lg-margin="0px 6px 0px 6px"
-						href="#"
+						href="/index#our-team"
 					>
 						Our Team
+					</Link>
+					<Link
+						font="--lead"
+						padding="6px 6px 6px 6px"
+						margin="0px 18px 0px 18px"
+						md-margin="0px 18px 10px 18px"
+						lg-margin="0px 6px 0px 6px"
+						href="/resources"
+						text-decoration-line="initial"
+						color="--dark"
+					>
+						<Em>
+							Resources
+						</Em>
+					</Link>
+					<Link
+						lg-margin="0px 6px 0px 6px"
+						text-decoration-line="initial"
+						color="--dark"
+						font="--lead"
+						padding="6px 6px 6px 6px"
+						margin="0px 18px 0px 18px"
+						md-margin="0px 18px 10px 18px"
+						href="/index#partners"
+					>
+						Save on AI!
 					</Link>
 				</Box>
 			</Components.QuarklycommunityKitMobileSidePanel>
@@ -237,31 +251,7 @@ export default (() => {
 						filter="invert(5%) brightness(200%)"
 					/>
 				</Box>
-				<Box min-width="100px" min-height="100px">
-					<Text margin="0px 0px 0px 0px" max-width="25vw" text-align="center" font="24px Roboto">
-						<br />
-						<Link href="https://quarkly.io/preview#/https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow">
-							Homo Deus
-						</Link>
-						{" "}or{" "}
-						<Link href="https://quarkly.io/preview#/https://en.wikipedia.org/wiki/Herd_behavior#Sheeple">
-							Sheeple
-						</Link>
-						{" "}?
-					</Text>
-					<Image
-						src="https://pbs.twimg.com/media/EewgJk5VoAAQY2I?format=jpg&name=4096x4096"
-						display="block"
-						object-fit="scale-down"
-						className="redbluepill"
-						width="50% content-box"
-						height="50% content-box"
-						max-width="25vw"
-						margin="2vw 0px 0px 0px"
-						box-shadow="5px 0 25px 1px rgba(214, 18, 171, 0.66)"
-						filter="invert(5%) brightness(200%)"
-					/>
-				</Box>
+				<Box min-width="100px" min-height="100px" />
 			</Box>
 		</Section>
 		<Section padding="54px 0 30px 0" quarkly-title="Footer" lg-padding="30px 0 20px 0">
@@ -360,7 +350,6 @@ export default (() => {
 				</Link>
 			</Box>
 		</Section>
-		<Input display="block" placeholder-color="LightGray" background="white" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
