@@ -61,7 +61,7 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						md-margin="0px 18px 10px 18px"
-						href="#what-do"
+						href="/index#what-do"
 					>
 						What We Do
 					</Link>
@@ -71,7 +71,7 @@ export default (() => {
 						margin="0px 18px 0px 18px"
 						md-margin="0px 18px 10px 18px"
 						lg-margin="0px 6px 0px 6px"
-						href="#projects"
+						href="/index#projects"
 						text-decoration-line="initial"
 						color="--dark"
 					>
@@ -98,7 +98,7 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						lg-margin="0px 6px 0px 6px"
-						href="#touch"
+						href="/index#touch"
 					>
 						Our Team
 					</Link>

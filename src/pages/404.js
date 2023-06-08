@@ -73,7 +73,7 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						lg-margin="0px 6px 0px 6px"
-						href="/index#our-team"
+						href="/index#touch"
 					>
 						Our Team
 					</Link>

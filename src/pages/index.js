@@ -100,7 +100,7 @@ export default (() => {
 						padding="6px 6px 6px 6px"
 						margin="0px 18px 0px 18px"
 						md-margin="0px 18px 10px 18px"
-						href="#what-do"
+						href="#partners"
 					>
 						Save on AI!
 					</Link>
