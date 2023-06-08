@@ -237,6 +237,31 @@ export default (() => {
 						filter="invert(5%) brightness(200%)"
 					/>
 				</Box>
+				<Box min-width="100px" min-height="100px">
+					<Text margin="0px 0px 0px 0px" max-width="25vw" text-align="center" font="24px Roboto">
+						<br />
+						<Link href="https://quarkly.io/preview#/https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow">
+							Homo Deus
+						</Link>
+						{" "}or{" "}
+						<Link href="https://quarkly.io/preview#/https://en.wikipedia.org/wiki/Herd_behavior#Sheeple">
+							Sheeple
+						</Link>
+						{" "}?
+					</Text>
+					<Image
+						src="https://pbs.twimg.com/media/EewgJk5VoAAQY2I?format=jpg&name=4096x4096"
+						display="block"
+						object-fit="scale-down"
+						className="redbluepill"
+						width="50% content-box"
+						height="50% content-box"
+						max-width="25vw"
+						margin="2vw 0px 0px 0px"
+						box-shadow="5px 0 25px 1px rgba(214, 18, 171, 0.66)"
+						filter="invert(5%) brightness(200%)"
+					/>
+				</Box>
 			</Box>
 		</Section>
 		<Section padding="54px 0 30px 0" quarkly-title="Footer" lg-padding="30px 0 20px 0">
