@@ -329,7 +329,7 @@ export default (() => {
 				<Link
 					margin="0px 0px 16px 0px"
 					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
-					href="mailto:mail@gmail.com"
+					href="mailto:superconscious[at]tuhh.de"
 					text-decoration-line="initial"
 					color="--dark"
 					font="--lead"

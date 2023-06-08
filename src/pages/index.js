@@ -555,7 +555,7 @@ export default (() => {
 			<Box align-items="center" display="flex" justify-content="center" flex-direction="column">
 				<Text
 					margin="0px 0px 0px 0px"
-					font="--headline1"
+					font="--headline2"
 					color="--dark"
 					sm-font="normal 700 52px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
 					text-align="center"

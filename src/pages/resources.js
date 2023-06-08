@@ -233,9 +233,102 @@ export default (() => {
 				Hi! I'm a paragraph. Click here to add your own text and edit me. It’s a piece of cake.
 			</Text>
 		</Section>
-		<Link href="#" color="#000000">
-			Some text
-		</Link>
+		<Section padding="54px 0 30px 0" quarkly-title="Footer" lg-padding="30px 0 20px 0">
+			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
+			<Box
+				empty-min-height="64px"
+				empty-border-width="1px"
+				empty-border-style="solid"
+				width="25%"
+				md-width="50%"
+				sm-margin="0px 0px 16px 0px"
+				empty-min-width="64px"
+				empty-border-color="LightGray"
+				padding="16px 16px 16px 16px"
+				md-align-items="flex-start"
+				md-display="flex"
+				md-justify-content="center"
+				sm-padding="16px 16px 16px 0px"
+			>
+				<Image src="https://uploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png" width="248px" height="auto" max-width="100%" />
+			</Box>
+			<Box
+				width="25%"
+				flex-direction="column"
+				md-width="50%"
+				sm-padding="16px 16px 16px 0px"
+				empty-border-style="solid"
+				empty-min-height="64px"
+				empty-border-width="1px"
+				empty-border-color="LightGray"
+				padding="16px 16px 16px 16px"
+				display="flex"
+				empty-min-width="64px"
+			>
+				<Text margin="0px 0px 32px 0px" font="--headline4" color="--dark" lg-font="600 24px/1.3 &quot;Manrope&quot;, sans-serif">
+					About
+				</Text>
+				<Link
+					href="/404"
+					text-decoration-line="initial"
+					color="--dark"
+					font="--lead"
+					margin="0px 0px 16px 0px"
+					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
+				>
+					Genesis // Our goals
+				</Link>
+			</Box>
+			<Box
+				empty-min-height="64px"
+				empty-border-width="1px"
+				empty-border-color="LightGray"
+				padding="16px 16px 16px 16px"
+				display="flex"
+				flex-direction="column"
+				sm-padding="16px 16px 16px 0px"
+				empty-min-width="64px"
+				empty-border-style="solid"
+				width="25%"
+				md-width="50%"
+			>
+				<Text margin="0px 0px 32px 0px" font="--headline4" color="--dark" lg-font="600 24px/1.3 &quot;Manrope&quot;, sans-serif">
+					Contact
+				</Text>
+				<Link
+					href="tel:123456789"
+					text-decoration-line="initial"
+					color="--dark"
+					font="--lead"
+					margin="0px 0px 16px 0px"
+					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
+				>
+					@superconAI
+				</Link>
+				<Link
+					margin="0px 0px 16px 0px"
+					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
+					href="mailto:superconscious[att]tuhh.de"
+					text-decoration-line="initial"
+					color="--dark"
+					font="--lead"
+				>
+					superconscious[at]tuhh.de
+				</Link>
+				<Link
+					lg-font="normal 400 16px/1.5 &quot;Manrope&quot;, sans-serif"
+					href="#"
+					text-decoration-line="initial"
+					color="--dark"
+					font="--lead"
+					margin="0px 0px 16px 0px"
+				>
+					Schlossmühlendamm 32
+					<br />
+					21075 Hamburg, Germany
+				</Link>
+			</Box>
+		</Section>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
