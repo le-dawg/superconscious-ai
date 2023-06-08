@@ -232,8 +232,9 @@ export default (() => {
 						width="50% content-box"
 						height="50% content-box"
 						max-width="25vw"
-						margin="1vw 0px 0px 0px"
+						margin="2vw 0px 0px 0px"
 						box-shadow="5px 0 25px 1px rgba(214, 18, 171, 0.66)"
+						filter="invert(5%) brightness(200%)"
 					/>
 				</Box>
 			</Box>
