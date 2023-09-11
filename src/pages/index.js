@@ -38,6 +38,8 @@ export default (() => {
 				flex="0 1 auto"
 				min-width="24px"
 				min-height="24px"
+				srcSet="https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?v=2023-05-17T13%3A02%3A03.066Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?v=2023-05-17T13%3A02%3A03.066Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?v=2023-05-17T13%3A02%3A03.066Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?v=2023-05-17T13%3A02%3A03.066Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?v=2023-05-17T13%3A02%3A03.066Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?v=2023-05-17T13%3A02%3A03.066Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?v=2023-05-17T13%3A02%3A03.066Z&quality=85&w=3200 3200w"
+				sizes="(max-width: 576px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
 			/>
 			<Box
 				min-width="100px"
@@ -724,8 +726,9 @@ export default (() => {
 					</Box>
 				</Box>
 				<Text margin="0px" font="--lead">
-					{"      "}GES & IIW Alumnus, Founder
+					IIW Alum, Founder
 					<br />
+					LLM & Applied AI Nerd
 				</Text>
 			</Box>
 			<Box
@@ -768,7 +771,56 @@ export default (() => {
 						Stephan Fischer
 					</Text>
 					<Text margin="0px 0px 0px 0px" font="--lead">
-						B.Sc. Mechatronik, Resident AIrtist
+						B.Sc. Mechatronics, Resident AIrtist
+					</Text>
+				</Box>
+			</Box>
+			<Box
+				empty-border-color="LightGray"
+				width="33%"
+				padding="16px 16px 16px 16px"
+				md-width="100%"
+				empty-min-width="64px"
+				empty-min-height="64px"
+				empty-border-width="1px"
+				empty-border-style="solid"
+			>
+				<Box
+					width="300px"
+					height="300px"
+					border-radius="50%"
+					overflow="hidden"
+					display="flex"
+					justify-content="center"
+					align-items="center"
+				>
+					<Image
+						src="https://pbs.twimg.com/profile_images/1614730592389668868/DrmacvHo_400x400.jpg"
+						width="100%"
+						min-height="400px"
+						object-fit="cover"
+						object-position="80% 0%"
+						lg-min-height="200px"
+					/>
+				</Box>
+				<Box
+					display="flex"
+					flex-direction="column"
+					md-width="100%"
+					md-flex-direction="row"
+					md-align-items="center"
+					md-justify-content="space-between"
+				>
+					<Text margin="16px 0px 13px 0px" font="--headline4" color="--dark" lg-font="600 16px/1.3 &quot;Manrope&quot;, sans-serif">
+						Dan Gauthier
+					</Text>
+					<SocialMedia margin="0px 0px 0px -3px" justify-content="flex-start" twitter="https://twitter.com/hvbris_">
+						{"          "}
+					</SocialMedia>
+					<Text margin="0px 0px 0px 0px" font="--lead">
+						M.A. Technical Marketing
+						<br />
+						Big Data Nerd
 					</Text>
 				</Box>
 			</Box>
@@ -838,7 +890,14 @@ export default (() => {
 				md-justify-content="center"
 				sm-padding="16px 16px 16px 0px"
 			>
-				<Image src="https://uploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png" width="248px" height="auto" max-width="100%" />
+				<Image
+					src="https://uploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png"
+					width="248px"
+					height="auto"
+					max-width="100%"
+					srcSet="https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?quality=85&w=500 500w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?quality=85&w=800 800w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?quality=85&w=1080 1080w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?quality=85&w=1600 1600w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?quality=85&w=2000 2000w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?quality=85&w=2600 2600w,https://smartuploads.quarkly.io/6464cddb0343c10023977ea1/images/SVG_SCAG.png?quality=85&w=3200 3200w"
+					sizes="(max-width: 576px) 100vw,(max-width: 767px) 100vw,(max-width: 992px) 100vw,100vw"
+				/>
 			</Box>
 			<Box
 				width="25%"
